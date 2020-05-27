@@ -1,0 +1,13 @@
+<html>
+<meta charset="utf-8">
+  <body>
+    <table border="1">
+    <tr>
+    <td>이름</td><td>성별</td><td>주소</td>
+    </tr>
+    <tr>
+    <td>최직혁</td><td>남</td><td>청주</td>
+    </tr>
+    </table>
+  </body>
+</html>
