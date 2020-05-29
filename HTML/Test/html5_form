@@ -1,0 +1,19 @@
+<!DOCTYPE>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+  <form action="form.php">
+    나이:<input type="number" name="age"min="10"max="15">
+    날짜:<input type="date"name="datev">
+    달:<input type="month" name="monthv">
+    주:<input type="week" name="weekv">
+    시간:<input type="time"name="timev">
+    이메일:<input type="email" name="emailv">
+    찾기:<input type="search" name="searchv">
+    전화번호:<input type="tel"name="telv">
+    링크:<input type="url"name="urlv">
+    <input type="range"name="rangev"min="0"max="10">
+    <input type="submit">
+  </form>
+</body>
+</html>
