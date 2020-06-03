@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input type="button"onclick="alert('Hello world')"value="Hello world"/>
+  </body>
+</html>
+
+*/
+alert('Hello world')   -> 이 부분이 자바스크립트
+/*
