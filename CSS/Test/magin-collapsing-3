@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #empty{
+      margin-top :50px;
+      margin-botton: 100px;
+      border: 1px solid tomato;
+    }
+    #normal{
+      background-color: powderblue;
+    }
+  </style>
+  </head>
+  <body>
+    <div id= "empty"></div>
+    <div id="normal">normal</div>
+  </body>
+</html>
