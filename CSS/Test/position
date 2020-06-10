@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html{
+      border: 1px solid gray;
+    }
+    div{
+      border:5px solid tomato;
+      margin: 10px;
+    }
+    #me{
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+  </style>
+  </head>
+  <body>
+  <div id="other">other</div>
+  <div id="parent">
+    parent
+    <div id="me">me</div>
+  </div>
+  </body>
+</html>
+
+<!-- position 속성
+엘리먼트의 위치를 지정하는 방법 (static, relative, absolute, fixed)
+
+position속성 미지정시 기본값은 static
+static - 원래 있어야 되는 위치에 정적으로 위치함(offset 무시)
+　　위치 설정이 되지 않은 상태
+
+top, bottom, left, right(offset)을 적용하고 싶을 경우
+position의 값을 static외의 값으로 지정해야 한다.
+(bottom, right < top, left 적용)
+
+*position을 지정해도 offset값을 지정하지 않을경우
+static처럼 원래 있어야 할 위치에 있게된다
+
+relative - 원래의 위치에서 상대적으로 위치를 변경
+
+absolute - html element를 기준으로 절대적인 위치로 변경
+
+**부모-자식 관계에 놓인 태그의 경우
+1) 자식태그가 absolute인 경우 부모태그는 자신의 크기만 가진다.
+이 때 자식태그는 block태그여도 inline태그처럼 컨텐츠만한 크기로 변한다.
+width와 height 값을 지정하면 크기 변경이 가능하다.
+(★fixed도 같은 효과)
+
+2) 여러 부모태그 중 absolute인 자식태그는
+position이 relative인 부모태그안에서 절대적으로 위치를 변경한다.
+
+fixed - 화면의 위치에 고정시켜 스크롤으로부터 독립되게 한다. -->
