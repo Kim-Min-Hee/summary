@@ -1,0 +1,15 @@
+spring MVC 초기설정
+1. pom.xml
+	- pom은 Project Object Model의 줄임말로 프로젝트에 필요한 모든 라이브러리를 관리한다.
+	- Maven에서 라이브러리들은 <dependency></dependency> xml태그 형태를 사용해 추가할 수 있다.
+
+2. web.xml
+	- 스프링에사 사용되는 web.xml파일은 Deployment Descriptor(배포 서술자)라고 불린다. 결국 어떤 프로젝트를 배포하게 되면 그 프로젝트에 대한 설정에 대한 정보를 가지고 있는 파일이라고 이해하면 되는데 기본적인 설정정보를 가지고 있다보니 모든 Spring프로젝트는 실행되기전에 1차적으로 web.xml을 거쳐가게 됩니다.
+
+3. dispatcher-servlet.xml
+	- 화면의 제어를 앞장서서 담당하는 xml이다.
+	- xmls은 bean에서 사용하기 위한 클래스를 사용하기 위해 명시해주는것이므로 빠짐없이 적어주어야 합니다.
+	- <mvc:anotation-driven>은 Annotation을 활용할 때 기본적인 Default 방식을 설정해준다고 합니다.(있어도 없어도 크게 상관 없음)
+	- <context:component-scan>은 일반적으로 스프링에서 클래스를 만들고 *의존성 주입은 @Autowired를 통해 (클래스 생성을) 처리합니다. 그런데 @Autowired를 하기 위해서는 application-context.xml에 해당클래스 모두를 bean으로 등록해두어야 되는데, 이러한 과정이 번거로우므로<context:component-scan>을 이용하여 처리하게 해주는 것입니다.
+	- base-pacakge는 시작하는 패키지 모두를 등록해주는 곳이다
+	-  objectMapper는 뷰 이름으로부터 사용할 View Object를 맵핑해줍니다. 여기서는 /WEB-INF/views/ 폴더의 .jsp로 끝나는 파일들을 찾아서 매핑해준다는 뜻이다.
